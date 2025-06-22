@@ -1,0 +1,320 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #F5F6FA;
+    color: #333333;
+}
+.panel-container {
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    background-color: #FFFFFF;
+    color: #333333;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+.sidebar-header {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #003087;
+}
+.sidebar h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #003087;
+}
+.sidebar .home-button {
+    display: block;
+    text-align: left;
+    padding: 10px;
+    background-color: #00A6B5;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.sidebar .home-button:hover {
+    background-color: #003087;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 5px 0;
+}
+.sidebar ul li a {
+    color: #333333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+.sidebar ul li a:hover {
+    background-color: #00A6B5;
+    color: #FFFFFF;
+}
+.sidebar ul li a.active {
+    background-color: #003087;
+    color: #FFFFFF;
+}
+.content {
+    flex: 1;
+    padding: 20px;
+}
+.content h2 {
+    color: #003087;
+}
+.error {
+    color: #FFFFFF;
+    background-color: #e74c3c;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.success {
+    color: #FFFFFF;
+    background-color: #2ecc71;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+form#user-info-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333333;
+}
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #00A6B5;
+    outline: none;
+}
+.save-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #003087;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+.save-button:hover {
+    background-color: #00A6B5;
+}
+
+/* Kartlar için stiller */
+.kartlar-container {
+    margin-bottom: 20px;
+}
+.kart {
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.kart-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.kart-logo {
+    width: 40px;
+    height: auto;
+}
+.kart-numara {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333333;
+}
+.banka-adi {
+    font-size: 1em;
+    color: #e74c3c;
+    font-weight: bold;
+}
+.sil-buton {
+    color: #e74c3c;
+    text-decoration: none;
+}
+.sil-buton:hover {
+    color: #c0392b;
+}
+.kart-body p {
+    margin: 0;
+    color: #666;
+}
+
+/* Başka Kart Ekle butonu */
+.add-kart-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background-color: #e74c3c;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+.add-kart-button:hover {
+    background-color: #c0392b;
+}
+
+/* Modal stilleri */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+.modal-content {
+    background-color: #FFFFFF;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333333;
+}
+.close:hover {
+    color: #e74c3c;
+}
+.modal-content h3 {
+    color: #003087;
+    margin-bottom: 20px;
+}
+.telefon-input {
+    display: flex;
+    gap: 10px;
+}
+.telefon-input select,
+.telefon-input input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+.form-row > div {
+    flex: 1;
+}
+#kart_numarasi {
+    letter-spacing: 2px;
+}
+
+/* Yolcular için stiller */
+.yolcular-container {
+    margin-bottom: 20px;
+}
+.yolcu {
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.yolcu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.yolcu-ad-soyad {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333333;
+}
+.yolcu-cinsiyet {
+    font-size: 1em;
+    color: #003087;
+    font-weight: bold;
+}
+.yolcu-body p {
+    margin: 5px 0;
+    color: #666;
+}
+.yolcu-body p strong {
+    color: #333333;
+}
+
+/* Yeni Yolcu Ekle butonu */
+.add-yolcu-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background-color: #00A6B5;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+.add-yolcu-button:hover {
+    background-color: #003087;
+}
+
+/* Cinsiyet seçimi */
+.cinsiyet-secim {
+    display: flex;
+    gap: 20px;
+}
+.cinsiyet-secim label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #333333;
+}

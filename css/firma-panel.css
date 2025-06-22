@@ -1,0 +1,102 @@
+.panel-container {
+    display: flex;
+    height: 100vh;
+    background-color: #006D77; /* Koyu turkuaz arka plan */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #227ee1; /* Daha koyu turkuaz menü */
+    color: white;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    font-family: 'Open Sans', sans-serif; /* Soft ve güzel font */
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #00A9B6; /* Açık turkuaz hover efekti */
+    color: white;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #EDEDED; /* Açık gri içerik alanı */
+}
+
+.main-content h2 {
+    color: #006D77; /* Koyu turkuaz başlık */
+    margin-bottom: 20px;
+    font-size: 25px; /* Biraz büyütülmüş font */
+    font-family: 'Open Sans', sans-serif; /* Soft font */
+    font-size: bold;
+}
+
+#content-area {
+    margin-top: 20px;
+}
+
+#content-area form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#content-area form div {
+    display: flex;
+    flex-direction: column;
+}
+
+#content-area form label {
+    margin-bottom: 5px;
+    color: #006D77;
+}
+
+#content-area form select, #content-area form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#content-area form button {
+    padding: 10px 20px;
+    background-color: #00A9B6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#content-area form button:hover {
+    background-color: #008C95;
+}
+
+#content-area #message {
+    margin-top: 10px;
+    color: #006D77;
+}

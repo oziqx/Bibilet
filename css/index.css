@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #a0d5ba;
+    color: #333333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    background: url('../bibilet-logo.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.50;
+    z-index: -1;
+}
+
+header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-height: 50px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    background-color: #00A6B5;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #003087;
+}
+
+.nav-button i {
+    margin-right: 5px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 60px 20px 40px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.search-container {
+    max-width: 1200px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.search-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.form-group select,
+.form-group input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.form-group select:focus,
+.form-group input[type="date"]:focus {
+    border-color: #00A6B5;
+    outline: none;
+}
+
+.swap-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #F5F6FA;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.swap-icon i {
+    color: #333333;
+}
+
+.tarih-secim {
+    flex: 0 0 auto;
+}
+
+.tarih-options {
+    display: flex;
+    gap: 15px;
+}
+
+.tarih-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #333333;
+}
+
+.search-button {
+    padding: 12px 30px;
+    background-color: #2ecc71;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #27ae60;
+}
