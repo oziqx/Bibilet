@@ -1,2 +1,2 @@
 # Bibilet
-Bitirme projesi olan ödev.
+Web tabanlı yapılmış otobüs bileti satın alım uygulamasıdır. Uygulama %70 seviyesinde tamamlanmıştır. Eksik kısımları çoktur ama genel işlevselliği çalışmaktadır. PHP, JS, CSS, HTML kullanarak yaptığım bitirme projemdir. Xampp üzerinden kolaylıkla çalıştırabilirsiniz ve kullanıma hazırdır. Ekisikleri ise; ödeme kısmında hata, satın alınan bilet koltuk seçim ekranında satın alınmış şeklinde gözükmemesi, firma panelinde ki sekmelerde ki eksikikler(içerik). Bu projeyi bu şekilde güncelleyip kullanabilirsiniz.
